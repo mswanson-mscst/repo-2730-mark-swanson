@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7753344F-1F4B-463F-8402-16FF376F2D47}</ProjectGuid>
+    <ProjectGuid>{7E4C74F1-239B-4C5F-9D3F-72D2131B218C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>mswanson1g1.My.MyApplication</StartupObject>
-    <RootNamespace>mswanson1g1</RootNamespace>
-    <AssemblyName>mswanson1g1</AssemblyName>
+    <StartupObject>mswanson1h1.My.MyApplication</StartupObject>
+    <RootNamespace>mswanson1h1</RootNamespace>
+    <AssemblyName>mswanson1h1</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
@@ -21,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>mswanson1g1.xml</DocumentationFile>
+    <DocumentationFile>mswanson1h1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>mswanson1g1.xml</DocumentationFile>
+    <DocumentationFile>mswanson1h1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -117,6 +117,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cameraClipArt1.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
