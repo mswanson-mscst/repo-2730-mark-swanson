@@ -12,7 +12,94 @@ Public Class Form1
     Private single1, single2, single3 As Single
     Private double1, double2, double3 As Double
     Private decimal1, decimal2, decimal3 As Decimal
-    Private date1, date2, date3 As Date
+    Private date1, date2, date3 As DateTime
+    Private timeSpan2 As TimeSpan
+
+    Private Sub btnMultiply_Click(sender As Object, e As EventArgs) Handles btnMultiply.Click
+        btnDisplay_Click(Nothing, Nothing)
+        On Error Resume Next
+        'str3 = str1 - str2
+        'lblString3.Text = str3
+        byte3 = byte1 * byte2
+        lblByte3.Text = byte3.ToString()
+        short3 = short1 * short2
+        lblShort3.Text = short3.ToString()
+        integer3 = integer1 * integer2
+        lblInteger3.Text = integer3.ToString()
+        long3 = long1 * long2
+        lblLong3.Text = long3.ToString()
+        single3 = single1 * single2
+        lblSingle3.Text = single3.ToString()
+        double3 = double1 * double2
+        lblDouble3.Text = double3.ToString()
+        decimal3 = decimal1 * decimal2
+        lblDecimal3.Text = decimal3.ToString()
+    End Sub
+
+    Private Sub btnDivide_Click(sender As Object, e As EventArgs) Handles btnDivide.Click
+        btnDisplay_Click(Nothing, Nothing)
+        On Error Resume Next
+        'str3 = str1 - str2
+        'lblString3.Text = str3
+        byte3 = byte1 \ byte2
+        lblByte3.Text = byte3.ToString()
+        short3 = short1 \ short2
+        lblShort3.Text = short3.ToString()
+        integer3 = integer1 \ integer2
+        lblInteger3.Text = integer3.ToString()
+        long3 = long1 \ long2
+        lblLong3.Text = long3.ToString()
+        single3 = single1 / single2
+        lblSingle3.Text = single3.ToString()
+        double3 = double1 / double2
+        lblDouble3.Text = double3.ToString()
+        decimal3 = decimal1 / decimal2
+        lblDecimal3.Text = decimal3.ToString()
+    End Sub
+
+    Private Sub btnSubtract_Click(sender As Object, e As EventArgs) Handles btnSubtract.Click
+        btnDisplay_Click(Nothing, Nothing)
+        On Error Resume Next
+        'str3 = str1 - str2
+        'lblString3.Text = str3
+        byte3 = byte1 - byte2
+        lblByte3.Text = byte3.ToString()
+        short3 = short1 - short2
+        lblShort3.Text = short3.ToString()
+        integer3 = integer1 - integer2
+        lblInteger3.Text = integer3.ToString()
+        long3 = long1 - long2
+        lblLong3.Text = long3.ToString()
+        single3 = single1 - single2
+        lblSingle3.Text = single3.ToString()
+        double3 = double1 - double2
+        lblDouble3.Text = double3.ToString()
+        decimal3 = decimal1 - decimal2
+        lblDecimal3.Text = decimal3.ToString()
+        lblDate3.Text = date1.Subtract(timeSpan2).ToString()
+    End Sub
+
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        btnDisplay_Click(Nothing, Nothing)
+        On Error Resume Next
+        str3 = str1 + str2
+        lblString3.Text = str3
+        byte3 = byte1 + byte2
+        lblByte3.Text = byte3.ToString()
+        short3 = short1 + short2
+        lblShort3.Text = short3.ToString()
+        integer3 = integer1 + integer2
+        lblInteger3.Text = integer3.ToString()
+        long3 = long1 + long2
+        lblLong3.Text = long3.ToString()
+        single3 = single1 + single2
+        lblSingle3.Text = single3.ToString()
+        double3 = double1 + double2
+        lblDouble3.Text = double3.ToString()
+        decimal3 = decimal1 + decimal2
+        lblDecimal3.Text = decimal3.ToString()
+        lblDate3.Text = date1.Add(timeSpan2).ToString()
+    End Sub
 
     Private Sub btnDisplay_Click(sender As Object, e As EventArgs) Handles btnDisplay.Click
         str1 = String.Empty
@@ -42,6 +129,16 @@ Public Class Form1
         date1 = Date.MinValue
         date2 = Date.MinValue
         date3 = Date.MinValue
+
+        lblString3.Text = String.Empty
+        lblByte3.Text = String.Empty
+        lblShort3.Text = String.Empty
+        lblInteger3.Text = String.Empty
+        lblLong3.Text = String.Empty
+        lblSingle3.Text = String.Empty
+        lblDouble3.Text = String.Empty
+        lblDecimal3.Text = String.Empty
+        lblDate3.Text = String.Empty
 
         str1 = txtInput1.Text
         str2 = txtInput2.Text
@@ -85,6 +182,7 @@ Public Class Form1
 
         Date.TryParse(txtInput1.Text, date1)
         Date.TryParse(txtInput2.Text, date2)
+        TimeSpan.TryParse(txtInput2.Text, timeSpan2)
         lblDate1.Text = date1.ToString()
         lblDate2.Text = date2.ToString()
 
