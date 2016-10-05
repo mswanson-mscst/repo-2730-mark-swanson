@@ -1,4 +1,8 @@
-﻿Option Strict On
+﻿' Name:         Data Types Project
+' Purpose:      Program for testing numeric data types, ranges, and accuracy
+' Programmer:   Mark Swanson on 9/29/2017
+
+Option Strict On
 Option Explicit On
 Option Infer Off
 
@@ -126,9 +130,9 @@ Public Class Form1
         decimal1 = 0.0D
         decimal2 = 0.0D
         decimal3 = 0.0D
-        date1 = Date.MinValue
-        date2 = Date.MinValue
-        date3 = Date.MinValue
+        date1 = DateTime.MinValue
+        date2 = DateTime.MinValue
+        date3 = DateTime.MinValue
 
         lblString3.Text = String.Empty
         lblByte3.Text = String.Empty
@@ -180,8 +184,8 @@ Public Class Form1
         lblDecimal1.Text = decimal1.ToString()
         lblDecimal2.Text = decimal2.ToString()
 
-        Date.TryParse(txtInput1.Text, date1)
-        Date.TryParse(txtInput2.Text, date2)
+        DateTime.TryParse(txtInput1.Text, date1)
+        DateTime.TryParse(txtInput2.Text, date2)
         TimeSpan.TryParse(txtInput2.Text, timeSpan2)
         lblDate1.Text = date1.ToString()
         lblDate2.Text = date2.ToString()
