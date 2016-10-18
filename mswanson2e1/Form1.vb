@@ -1,4 +1,8 @@
-﻿Public Class Form1
+﻿Option Strict On
+Option Explicit On
+Option Infer Off
+
+Public Class Form1
     Private Sub btnCalc14And_Click(sender As Object, e As EventArgs) Handles btnCalc14And.Click
         ' calculate the shipping
         Dim dblOrder As Double
