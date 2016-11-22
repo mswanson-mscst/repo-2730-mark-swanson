@@ -50,7 +50,7 @@
         lblAvg.Text = String.Empty
 
         Const strPROMPT As String =
-            "Enter a nuber. " &
+            "Enter a number. " &
             ControlChars.NewLine &
             "Click Cancel or leave blank to end."
         Const strTITLE As String = "Number Entry"
@@ -96,7 +96,7 @@
         lblAvg.Text = String.Empty
 
         Const strPROMPT As String =
-            "Enter a nuber. " &
+            "Enter a number. " &
             ControlChars.NewLine &
             "Click Cancel or leave blank to end."
         Const strTITLE As String = "Number Entry"
